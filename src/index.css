@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .nav{
+    @apply relative text-gray-300 font-mono font-bold tracking-[1px] hover:text-white
+  }
+
+  .nav::after{
+    @apply content-[''] absolute bg-black/80 h-[2px] w-[0%] left-0 top-6 rounded-xl duration-300
+  }
+
+  .nav:hover::after{
+    @apply w-[100%]
+  }
+}
+
+.swiper-pagination{
+  bottom: 0 !important;
+}
