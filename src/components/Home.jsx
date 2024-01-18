@@ -19,6 +19,8 @@ function Home() {
     height: "100vh",
   };
 
+  console.log("hello")
+
   return (
     <div className="pt-[8vh] !overflow-x-hidden">
       <motion.div
